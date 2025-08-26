@@ -6,6 +6,8 @@ import net.minecraft.component.type.ProfileComponent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.World;
 import net.pixeldreamstudios.exclusiveitem.ExclusiveItemUtil;
 import org.jetbrains.annotations.Nullable;
 
@@ -22,5 +24,10 @@ public class ServerAccessor {
 
     public static MinecraftServer getServer() {
         return server;
+    }
+
+    @Nullable
+    public static ServerWorld getOverworld() {
+        return server.getWorld(World.OVERWORLD);
     }
 }

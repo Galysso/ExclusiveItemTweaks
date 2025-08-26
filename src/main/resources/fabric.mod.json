@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "codicraft_rarities",
+	"id": "codicraft_exclusive_item_tweaks",
 	"version": "${version}",
-	"name": "Rarities",
+	"name": "Exclusive Item Tweaks",
 	"description": "Mod to customize Exclusive Item",
 	"authors": [
 		"Galysso"

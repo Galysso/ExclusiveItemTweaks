@@ -1,15 +1,20 @@
 {
-	"required": true,
-	"package": "galysso.codicraft.exclusive_item_tweaks.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "EntityMixin",
-      "ExclusiveItemUtilMixin",
-      "ItemStackMixin"
-	],
-	"client": [
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "galysso.codicraft.exclusive_item_tweaks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ClaimConfirmationScreenMixin",
+    "EntityMixin",
+    "ExclusiveItemHandlerMixin",
+    "ExclusiveItemServerHooksMixin",
+    "ExclusiveItemUtilMixin",
+    "ItemStackMixin",
+    "ReclaimScreenMixin"
+  ],
+  "client": [
+    "ClaimConfirmationScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }
